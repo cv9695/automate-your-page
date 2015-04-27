@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Clint's Stage 1 Project</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <meta charset="UTF-8">
+</head>
+
+<body link="#0033CC">
+	<div class="stage"><h1 id="top">Introduction to Programming:<br> Stage 1 Notes</h1></div>
+		<table id="TOC">
+          <tr>
+          <th><a href="#lesson-1-1">Lesson 1: The Basics of the Web and HTML</a></th>
+          <th><a href="#lesson-1-2">Lesson 2: Creating a Structured Document with HTML</a></th>
+          <th><a href="#lesson-1-3">Lesson 3: Adding CSS Style to HTML Structure</a></th>
+          </tr>
+
+          <tr>
+			<td>
+          		<ul>
+              		<li>How the Web Works</li>
+              		<li>What is HTML?</li>
+              		<li>Tags and Elements</li>
+      			</ul>
+            </td>  
+          	<td>
+          		<ul>
+	              <li>Inline or Block....What's the difference?</li>
+	              <li>Tree structure</li>
+	              <li>Keep Code Clean and Easy to Read</li>
+	            </ul>  
+            </td>
+          	<td>
+          		<ul>
+	              <li>Tags and Elements</li>
+	              <li>Keep Code Clean and Easy to Read</li>
+              	</ul>
+            </td>
+          </tr>
+
+    	</table> 
+
+    <div class="lesson">
+    	<h2 id="lesson-1-1">Lesson 1: The Basics of the Web and HTML</h2>
+    	<div class="section">
+    		<div class="section-title">
+    			How the Web Works
+			</div>
+			<div class="information">
+				<p>The Web is a giant network of devices (<em>ex: laptops, PC's, servers, etc.</em>) that can talk to each other via an Internet connection from the device to an ISP. To connect from one device to another the Web uses HTTP (<em>Hypertext Transfer Protocol</em>) protocol to make this connection.</p>
+
+				<h4><u>EXAMPLE:</u></h4>
+				<p>When you type <a href="http://www.udacity.com">www.udacity.com</a> your computer sends HTTP protocol via the Internet connection to the Udacity web server. The Udacity web server then communicates back to your computer using HTTP to send the Udacity homepage.</p>
+			</div>
+		</div>
+		<div class="section">
+    		<div class="section-title">
+    			HTML
+			</div>
+			<div class="information">
+				<p>HTML or <em>Hypertext Markup Language</em>is the coding language that is the base of any website.</p>
+
+				<p>HTML is what shows the visual properties of a website. Whether it's plain text, images, or video, HTML is used to code these properties into the website. For a more detailed description view the following link: <a href="http://en.wikipedia.org/wiki/HTML">Wikipedia-HTML</a></p>
+
+			</div>
+		</div>
+		<div class="section">
+    		<div class="section-title">
+    			Tags and Elements
+			</div>
+			<div class="information">
+				<p>HTML code uses a structure of HTML <b>elements</b>. The different elements are what define the website you build.</p>
+				<p>	A complete HTML element contains opening and ending <b>tags</b>. The HTML tag is what defines the type of element. Below is an image from our Udacity course that shows the structure of an element.
+				<img src="element-tag_drawing.png" alt="Element/Tag Description" style="width:400px;height:250px;border:1px solid black; margin-top:10px"></p>
+
+			</div>
+		</div>
+		<div class="top"><a href="#top">Back to Top</a></div>
+	</div>
+
+	<div class="lesson">
+    	<h2 id="lesson-1-2">Lesson 2: Creating a Structured Document with HTML</h2>
+    	<div class="section">
+    		<div class="section-title">
+    			Inline or Block....What's the Difference?
+			</div>
+			<div class="information">
+				<p>HTML elements are considered either Inline or Block elements. Inline elements usually only displayed without line breaks, such as Underline or Bold elements. Block elements normally contain multiple lines of information. Everything within a block elements is contained in an invisible block. An example of a block element is <b>&lt;div&gt;</b>. This element is used in CSS styling, and when used everything within this tag would use the associated CSS associated styling for that <b>&lt;div&gt;</b> element.</p>
+			</div>
+		</div>
+		<div class="section">
+    		<div class="section-title">
+    			Tree Structure
+			</div>
+			<div class="information">
+				<p>HTML follows a tree like structure. The structure can start with a container element, such as <b>&lt;div&gt;</b> and within it can contain multiple other elements. There can be many levels of nested elements within one overall element.</p>
+
+			</div>
+		</div>
+		<div class="section">
+    		<div class="section-title">
+    			Keep Code Clean and Easy to Read
+			</div>
+			<div class="information">
+				<p>When creating HTML code it is very important to keep it clean and easy to read. The person writing the HTML code initially will likely not be the only person to ever read it again. For this reason, it is a good idea to indent nested elements and keep clear comments where needed.</p>
+
+			</div>
+		</div>
+		<div class="top"><a href="#top">Back to Top</a></div>
+	</div>
+
+		<div class="lesson">
+    	<h2 id="lesson-1-3">Lesson 3: Adding CSS Style to HTML Structure</h2>
+    	<div class="section">
+    		<div class="section-title">
+    			What is CSS?
+			</div>
+			<div class="information">
+				<p>CSS stands for "Cascading Style Sheets". CSS is the coding language that determines how the HTML code is displayed and styled.</p>
+				<p>In my own mind, I think of CSS as defining a CSS variable in HTML and then assigning that variable a set of CSS style attributes. Where ever that CSS "variable" is used within HTML, the corresponding elements and its contents use the CSS styling associated.</p>
+				<p>The following link is a great summary and quick reference from Udacity on CSS. <a href="https://www.udacity.com/course/viewer#!/c-ud721-nd/l-3575138706/m-3611108698">CSS Summary and Reference</a></p>
+			</div>
+		</div>
+		<div class="section">
+    		<div class="section-title">
+    			Avoid Repetition in Styling
+			</div>
+			<div class="information">
+				<p>The major benefit of CSS is of not having to duplicate styling multiple times in HTML code. CSS allows for greater efficiency and saves a lot of time for programmers.</p>
+
+				<p>CSS coding can be used three different ways.</p>
+					<ul>
+						<li>HTML code is linked to a separate CSS file, which is most common, especially for more complicated projects.</li>
+						<li>Within a &lt;style&gt; element within the &lt;head&gt; element at top of HTML code. This method could be used for a smaller project.</li>
+						<li>Write the styling code within the HTML code. This is least preferred method because it creates a lot of repetition and can lead to mistakes and headaches when debugging.</li>
+
+					</ul>
+
+			</div>
+		</div>
+		<div class="top"><a href="#top">Back to Top</a></div>
+	</div>
+
+
+		<div class="stage"><h1 id="top">Introduction to Programming:<br>Stage 2 Notes</h1></div>
+		<table id="TOC">
+          <tr>
+          <th><a href="#lesson-2-1">Lesson 1: Introduction to "Serious" Programming</a></th>
+          <th><a href="#lesson-2-2">Lesson 2:<br> Variables and Strings</a></th>
+          <th><a href="#lesson-2-3">Lesson 3: Input >>> Function >>> Output</a></th>
+          <th><a href="#lesson-2-4">Lesson 4: Decisions and Repetition: If and While</a></th>
+          <th><a href="#lesson-2-5">Lesson 5: Structured Data: Lists and For Loops</a></th>
+          </tr>
+
+          <tr>
+			<td>
+          		<ul>
+              		<li>What is Programming?</li>
+              		<li>Programming Languages</li>
+              		<li>Interpreter</li>
+      			</ul>
+            </td>  
+          	<td>
+          		<ul>
+	              <li>What is a Variable?</li>
+	              <li>How are Variables Useful in Programming?</li>
+	              <li>Difference between number and string values</li>
+	            </ul>  
+            </td>
+          	<td>
+          		<ul>
+	              <li>What is a Function (or Procedure)?</li>
+	              <li>Why are Functions so beneficial?</li>
+	              <li>Function Format</li>
+              	</ul>
+            </td>
+            <td>
+          		<ul>
+	              <li>Making Decisions</li>
+	              <li>IF Statement & While Loop</li>
+              	</ul>
+            </td>
+            <td>
+          		<ul>
+	              <li>Structured Data</li>
+	              <li>Mutability</li>
+	              <li>The Difference between Append and "+"</li>
+              	</ul>
+            </td>
+          </tr>
+
+    	</table> 
+
+    <div class="lesson">
+    	<h2 id="lesson-2-1">Lesson 1: Introduction to "Serious" Programming</h2>
+    	<div class="section">
+    		<div class="section-title">
+    			What is Programming?
+			</div>
+			<div class="information">
+				<p>Programming is a precise sequence of steps to tell the computer or program what to do, and is the core of computer science.</p>
+				<p>A computer is useless without programming. Computers are not smart themselves, but it's the programming provided by a human that makes them smart.</p>
+			
+			</div>
+		</div>
+		<div class="section">
+    		<div class="section-title">
+    			Programming Languages
+			</div>
+			<div class="information">
+				<p>A programming language is the language used to write computer programs.In natural speaking languages there is too much ambiguity that can often lead to confusion. Programming languages need clear, concise instructions to remove any confusion.</p>
+				<p>The building blocks of programming languages are the syntax and semantic rules. </p>
+				<ul>
+					<li><u>Syntax:</u> The set of rules of the language structure or form.</li>
+					<li><u>Semantics:</u> Defines the meaning of the language used.</li>
+				</ul>
+				<p>There are many different programming languages, for example Python, which is what we are using in this nanodegree. Below are a few other well known programming languages, but there are many more.</p>
+				<ul>
+					<li>Java</li>
+					<li>JavaScript</li>
+					<li>PHP</li>
+					<li>SQL</li>
+				</ul>
+
+			</div>
+		</div>
+		<div class="section">
+    		<div class="section-title">
+    			Interpreter
+			</div>
+			<div class="information">
+				<p>An interpreter is the "middle man" if you will, between the high-level programming language and the lower-level machine language. When we write code in Python it is the Python interpreter program that translates our code into a language that the machine understands.</p>
+
+			</div>
+		</div>
+		<div class="top"><a href="#top">Back to Top</a></div>
+	</div>
+
+	<div class="lesson">
+    	<h2 id="lesson-2-2">Lesson 2: Variables and Strings</h2>
+    	<div class="section">
+    		<div class="section-title">
+    			What is a Variable?
+			</div>
+			<div class="information">
+				<p>A variable gives the programmer a way to assign a name to commonly used value in the program. Variables can change or update throughout the programming as needed.</p>
+				<p><span class="examples">EXAMPLE:&nbsp;&nbsp;&nbsp;value = 2,&nbsp;&nbsp;&nbsp;print value * 3 >>> 6</span></p>
+				
+			</div>
+		</div>
+		<div class="section">
+    		<div class="section-title">
+    			How are Variables Useful in Programming?
+			</div>
+			<div class="information">
+				<p>Variables reduce the amount of code to be typed in a program and improve the readability of others reading the code.  A variable takes the place of a value, and can be used multiple times throughout the programming. Throughout the program the value of a variable can change, hence the name variable. </p>
+
+			</div>
+		</div>
+		<div class="section">
+    		<div class="section-title">
+    			Difference between number and string values
+			</div>
+			<div class="information">
+				<p>In Python, knowing the difference between a number and a string is very important. Below you can see the differences:</p>
+				<ul>
+					<li>A string value should be surrounded by double quotes or single quotes. Even numbers can be made into a string so they can be concatenated with words in a string.<p><span class="examples">EXAMPLE: "1000", 'dog', etc.</span></p></li>
+					<li>A number value displays a number with no quotation. <p><span class="examples">EXAMPLE: 1000, 500, etc.</span></p></li>
+
+
+
+				</ul>
+
+			</div>
+		</div>
+		<div class="top"><a href="#top">Back to Top</a></div>
+	</div>
+
+	<div class="lesson">
+    	<h2 id="lesson-2-3">Lesson 3: Input >>> Function >>> Output</h2>
+    	<div class="section">
+    		<div class="section-title">
+    			What is a Function (or Procedure)?
+			</div>
+			<div class="information">
+				<p>A function takes input, performs instructions on that input, and produces the desired output. A simple example would be a function called <span class="examples">sum</span>. In this function you could provide a defined amount of input and the function take all the input values and output the sum of all.</p>
+			</div>
+		</div>
+		<div class="section">
+    		<div class="section-title">
+    			Why are Functions so beneficial?
+			</div>
+			<div class="information">
+				<p>Once functions are created, they can be reused throughout the entire program. This saves a lot of time and effort because you do not have to duplicate so much coding. Once the function is built you just call it into action to get the output needed.</p>
+				
+
+			</div>
+		</div>
+		<div class="section">
+    		<div class="section-title">
+    			Function format
+			</div>
+			<div class="information">
+				<p>Functions require a specific format. You first have to define the function and that begins with <span class="examples">def</span>. After <span class="examples">def</span> you name your function, provide your parameters in parentheses, and end with a semi-colon.</p>
+				<p><span class="examples">EXAMPLE: def sum(a,b,c):</span></p>
+				<p>The body of the function contains the instructions for the function. The body can contain assignments, loops, IF statements, etc. Once all of the instructions are complete the <span class="examples">return</span> statement is what is used to produce the <span class="examples">output</span> of the function.</p>
+				<p><span class="examples">EXAMPLE:</span><br>
+				<span class="examples2">def &nbsp;sum(a,b,c):<br>
+				<span class="indent">x = a + b + c</span><br>
+				<span class="indent">return x</span><br>
+				<br>
+				<span class="examples">print &nbsp;sum(1,3,5) >>> 9</span></p>	
+				
+
+			</div>
+		</div>
+		<div class="top"><a href="#top">Back to Top</a></div>
+	</div>
+
+	<div class="lesson">
+    	<h2 id="lesson-2-4">Lesson 4: Decisions and Repetition: If and While</h2>
+    	<div class="section">
+    		<div class="section-title">
+    			Making Decisions
+			</div>
+			<div class="information">
+				<p>To make decisions within our functions we have to create test expressions using operators. These operators include: <, >, ==, !=, etc.</p>
+				<p>The one difference seen is ==. The double equal sign is used for equal, whereas the normal = sign we're accustomed to seeing actually means assignment in Python.</p>
+			</div>
+		</div>
+		<div class="section">
+    		<div class="section-title">
+    			IF Statement & While Loop
+			</div>
+			<div class="information">
+				<p>The IF statement is used to control which code gets executed when. The IF statement can also include the ELSE clause, which gives an alternative path if the test expression is not TRUE. The IF statement will run only 0 or 1 times.</p>
+				<p>The WHILE Loop lets you write code that does the same thing over and over. The WHILE loop continues running the loop as long as the <span class="examples">&lt;block&gt;</span> is TRUE. Once it is hits FALSE it breaks the loop and continues to the next line of code.</p>
+				<table id="table_examples" align="center">
+					<tr>
+					<th>IF Statement Format:</th>
+					<th>WHILE Loop Format:</th>
+					</tr>
+					<tr>
+						<td><span class="examples2">if <b>&lt;test expression&gt;</b>:</span><br>
+							<span class="indent"><b>&lt;block&gt;</b></span></td>
+						<td><span class="examples2">while <b>&lt;test expression&gt;</b>:</span><br>
+							<span class="indent"><b>&lt;block&gt;</b></span></td>
+					</tr>
+				</table>
+				
+
+			</div>
+		</div>
+		<div class="top"><a href="#top">Back to Top</a></div>
+	</div>
+
+	<div class="lesson">
+    	<h2 id="lesson-2-5">Lesson 5: Structured Data: Lists and For Loops</h2>
+    	<div class="section">
+    		<div class="section-title">
+    			Structured Data
+			</div>
+			<div class="information">
+				<b>Strings and Lists</b>
+				<ul>
+					<li>Strings are a sequence of characters and we can operate on sub-sequences of the string.</li>
+					<li>Lists are a sequence of anything. Elements in the lists can be strings, numbers, or other lists. Lists are more powerful than strings. </li>
+				</ul>
+			</div>
+		</div>
+		<div class="section">
+    		<div class="section-title">
+    			Mutability
+			</div>
+			<div class="information">
+				<p>The ability to mutate means that we can change the value of a list once we create it, and mutating allows you to change list elements while keeping the same list.</p>
+				
+
+			</div>
+		</div>
+		<div class="section">
+    		<div class="section-title">
+    			The Difference between Append and "+"
+			</div>
+			<div class="information">
+				<p>Append is a method used with a list to add a new element(s) to an existing list, and does not create a new list.</p>
+				<p>The plus <b>("+")</b> operator is similar to concatenation with strings, and does not mutate the lists, but combines two lists to create a new list.</p>
+				
+
+			</div>
+		</div>
+		<div class="section">
+    		<div class="section-title">
+    			For Loops
+			</div>
+			<div class="information">
+				<p>While you could loop through every element of a list with a WHILE loop it could be more complicated. The FOR Loop in Python reduces the work and runs more efficiently than WHILE. </p>
+				<table id="table_examples" align="center">
+					<tr>
+						<th>For Loop Structure:</th>
+						<th>For Loop Example:</th>
+						<th>For Loop Answer:</th>
+					</tr>
+					<tr>
+						<td><span class="examples2"> for <b>&lt;name for variable&gt;</b> in <b>&lt;list&gt;</b>:</span><br>
+							<span class="indent"><b>&lt;block&gt;</b></span>
+						</td>
+						<td><span class="examples2">example_list = [c,a,t]</span><br>
+							<span class="examples2"><b>for</b> letter <b>in</b> example_list:</span><br>
+							<span class="indent"><b>print</b> letter</span>
+						</td>
+						<td><span class"example2">c</span><br>
+							<span class"example2">a</span><br>
+							<span class"example2">t</span>
+						</td>
+
+
+
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="top"><a href="#top">Back to Top</a></div>
+	</div>
+</body>
+</html>
